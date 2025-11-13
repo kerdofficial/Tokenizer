@@ -1,0 +1,15 @@
+{
+  "originHash" : "c36748b3e48191996dae2d952e054581389f02c52200dfe1ca9e542807d0d7a5",
+  "pins" : [
+    {
+      "identity" : "tiktoken",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kerdofficial/Tiktoken",
+      "state" : {
+        "branch" : "main",
+        "revision" : "de2e9a39a28d5cfe64c7eddd210315075a1bccf8"
+      }
+    }
+  ],
+  "version" : 3
+}

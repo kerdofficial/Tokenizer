@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DCF0E882EC5654E0033A0C2 /* TokenCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0E872EC5654E0033A0C2 /* TokenCounterViewModel.swift */; };
+		5DCF0EBA2EC57DCF0033A0C2 /* Tokenizer.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0EB92EC57DCF0033A0C2 /* Tokenizer.icon */; };
+		5DCF0EBB2EC57DCF0033A0C2 /* Tokenizer.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0EB92EC57DCF0033A0C2 /* Tokenizer.icon */; };
+		5DCF0EBC2EC57DCF0033A0C2 /* Tokenizer.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0EB92EC57DCF0033A0C2 /* Tokenizer.icon */; };
+		5DCF0EBF2EC587350033A0C2 /* Tiktoken in Frameworks */ = {isa = PBXBuildFile; productRef = 5DCF0EBE2EC587350033A0C2 /* Tiktoken */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5DCF0E622EC561160033A0C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +35,8 @@
 		5DCF0E542EC561150033A0C2 /* Tokenizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tokenizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF0E612EC561160033A0C2 /* TokenizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF0E6B2EC561160033A0C2 /* TokenizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF0E872EC5654E0033A0C2 /* TokenCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCounterViewModel.swift; sourceTree = "<group>"; };
+		5DCF0EB92EC57DCF0033A0C2 /* Tokenizer.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; name = Tokenizer.icon; path = /Users/danielkerekes/Downloads/Tokenizer.icon; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCF0EBF2EC587350033A0C2 /* Tiktoken in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,8 @@
 				5DCF0E642EC561160033A0C2 /* TokenizerTests */,
 				5DCF0E6E2EC561160033A0C2 /* TokenizerUITests */,
 				5DCF0E552EC561150033A0C2 /* Products */,
+				5DCF0E872EC5654E0033A0C2 /* TokenCounterViewModel.swift */,
+				5DCF0EB92EC57DCF0033A0C2 /* Tokenizer.icon */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +125,7 @@
 			);
 			name = Tokenizer;
 			packageProductDependencies = (
+				5DCF0EBE2EC587350033A0C2 /* Tiktoken */,
 			);
 			productName = Tokenizer;
 			productReference = 5DCF0E542EC561150033A0C2 /* Tokenizer.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 5DCF0E4B2EC561150033A0C2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DCF0EBD2EC5853F0033A0C2 /* XCRemoteSwiftPackageReference "Tiktoken" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5DCF0E552EC561150033A0C2 /* Products */;
 			projectDirPath = "";
@@ -212,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCF0EBB2EC57DCF0033A0C2 /* Tokenizer.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCF0EBA2EC57DCF0033A0C2 /* Tokenizer.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCF0EBC2EC57DCF0033A0C2 /* Tokenizer.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCF0E882EC5654E0033A0C2 /* TokenCounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,17 +413,29 @@
 		5DCF0E762EC561160033A0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Tokenizer;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7LA5DMHTL9;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,17 +457,29 @@
 		5DCF0E772EC561160033A0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Tokenizer;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7LA5DMHTL9;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DCF0EBD2EC5853F0033A0C2 /* XCRemoteSwiftPackageReference "Tiktoken" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kerdofficial/Tiktoken";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DCF0EBE2EC587350033A0C2 /* Tiktoken */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DCF0EBD2EC5853F0033A0C2 /* XCRemoteSwiftPackageReference "Tiktoken" */;
+			productName = Tiktoken;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DCF0E4C2EC561150033A0C2 /* Project object */;
 }
